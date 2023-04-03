@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-struct mahasiswa {
+struct Mahasiswa {
 	string nim;
 	string nama;
 	string alamat;
@@ -10,7 +10,7 @@ struct mahasiswa {
 
 int main()
 {
-	mahasiswa mhs1, mhs2;
+	Mahasiswa mhs1, mhs2;
 	
 	mhs1.nim = "20220140181";
 	mhs1.nama = "Latif";
