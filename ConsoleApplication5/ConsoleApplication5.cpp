@@ -4,7 +4,7 @@ using namespace std;
 struct mahasiswa {
 	string nim;
 	string nama;
-	string
-
-
+	string alamat;
+	int umur;
 };
+
