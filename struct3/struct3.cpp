@@ -1,19 +1,20 @@
+
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 struct AlamatDetail {
-	string desa[20];
-	string kota[20];
+	char desa[20];				
+	char kota[20];
 };
 
 struct Mahasiswa {
-	string nim[12];
-	string nama[20];
+	char nim[12];
+	char nama[20];
 	AlamatDetail alamat;
 	int umur;
 };
-
 int main() {
 
 	Mahasiswa mhs[3];
@@ -21,8 +22,8 @@ int main() {
 	for (int i = 0; i < 3; i++)
 	{
 		cout << "Masukkan nim :";
-		cin.getline(mhs[i].nim, 12);
-		cout << "Masukkan nama :" ;
+		cin.getline(mhs[i].nama, 20);
+		cout << "Masukkan nama :";
 		cin.getline(mhs[i].nama, 20);
 		cout << "Alamat :" << endl;
 		cout << "\t Desa : ";
@@ -43,3 +44,4 @@ int main() {
 		cout << "\n umur :" << mhs[i].umur;
 
 	}
+}
